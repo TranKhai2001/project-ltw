@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        html{
+            font-family: Arial;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+            color: #506172;
+        }
+        #container {
+
+        }
+        #container header{
+            height: 38px;
+
+        }
+        #container #logo-ad{
+            height: 120px;
+
+        }
+        #container #menu-search{
+            height: 105px;
+
+        }
+        #container #content{
+            height: 1500px;
+            margin: 0 90px;
+
+        }
+        #container #content .trending{
+            height: 114px;
+            display: flex;
+        }
+        #container #content .trending .frame-trending{
+            padding-top: 31px;
+            padding-bottom: 33px
+        }
+        #container #content .trending .frame-trending .node-trending{
+            font-size: 14px;
+            padding: 11px 0px;
+            border-radius: 5px;
+            background: #ff0b0b;
+            min-width: 146px;
+            width: 145px;
+            text-align: center;
+            color: white
+        }
+        #container #content .trending .frame-trending .node-trending:hover{
+            cursor: pointer;
+            background: #b61515;
+        }
+
+        #container #content .frame-content .frame-left{
+            width: 65%;
+            float: left;
+            clear: right;
+        }
+        #container #content .frame-content .input-icon .frame{
+            margin-top: 50px;
+        }
+        #container #content .frame-content .input-icon .frame .frame-input1 textarea{
+            width: 770px;
+            height: 185px;
+            vertical-align: text-top;
+            border: 1px solid #e5e6e9;
+            font-size: 13px;
+            background: transparent;
+            display: block;
+            line-height: 1.5;
+            padding: .375rem .75rem;
+
+        }
+        #container #content .frame-content .input-icon .frame .frame-input2{
+            display: flex;
+        }
+        #container #content .frame-content .input-icon .icon .share{
+            display: flex;
+        }
+        #container #content .frame-content .input-icon .icon .share .icon-share{
+            margin: auto 10px;
+        }
+        #container #content .frame-content .input-icon .icon .share .icon-share:hover{
+            cursor: pointer;
+        }
+        #container #content .frame-content .input-icon .frame  p{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        #container #content .frame-content .input-icon .frame .frame-input2 .input2{
+            margin: 20px 0;
+        }
+        #container #content .frame-content .input-icon .frame .frame-input2 .input2 input{
+            border: 1px solid #e5e6e9;
+            border-radius: 0px;
+            height: 48px;
+            width: 370px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent
+        }
+        .button-submit{
+            background: #fff;
+            color: #fc3f00 !important;
+            display: inline-block;
+            padding: 18px 44px;
+            font-family: "Roboto",sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            border: 0;
+            border: 1px solid #fc3f00;
+            letter-spacing: 3px;
+            text-align: center;
+            color: #fc3f00;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .button-submit:hover{
+            background:#fc3f00 ;
+            color: #fff !important;
+        }
+        #container #content .frame-content .frame-left .frame-text p{
+            margin-top: 13px;
+
+        }
+        #container #content .frame-content .frame-right{
+            width: 34%;
+            float: right;
+            clear: none;
+        }
+        #container #content .frame-content .frame-right .frame-icon{
+            width: 370px;
+            height:134px ;
+            margin: 20px;
+            margin-top: 40px ;
+
+
+        }#container #content .frame-content .frame-right .frame-icon .icon{
+            width:153px ;
+            height:35px ;
+            float: left;
+            display: flex;
+            padding: 8px  ;
+            margin:4px;
+            border: 0.1px solid #eae6e6;
+            border-radius: 5px;
+
+        }
+        #container #content .frame-content .frame-right .frame-icon .text-icon {
+            padding-left: 5px;
+        }
+        #container #content .frame-content .frame-right .frame-icon .fab:hover{
+            cursor: pointer;
+        }
+        .fab {
+            color: white;
+            border-radius: 6px;
+            font-size: 25px;
+            padding: 5px 9px;
+            margin-left: 20px;
+        }
+        #container #content .frame-content .frame-right .ad:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <nav id="logo-ad"></nav>
+        <nav id="menu-search"></nav>
+        <section id="content">
+            <div class="trending">
+               <div class="frame-trending" >
+                   <p class="node-trending" style="">
+                       <b>TRENDING NOW</b>
+                   </p>
+               </div>
+            </div>
+            <div class="frame-content">
+                <div class="frame-left">
+                    <div class="frame-image">
+                        <img src="https://robomateplus.com/wp-content/uploads/2018/10/Albert-Einstein.jpg" alt="" style="width: 770px;height: 373px;background: #31d2f2">
+                    </div>
+                    <div class="frame-text">
+                        <h3 style="font-size: 24px;line-height: 1.4;"><b>Những câu nói hay của Albert Einstein  </b></h3>
+                        <p>Cuộc sống giống như việc đi xe đạp. Để giữ thăng bằng, bạn phải liên tục di chuyển</p>
+                        <p> Điều quan trọng là hãy không ngừng đặt câu hỏi. Trí tò mò tồn tại là có lí do của nó </p>
+                        <p>Trong mỗi khó khăn đều ẩn chứa cơ hội</p>
+                        <p>Bản chất của giáo dục chính là những gì còn lại sau khi người ta quên hết những thứ đã được học ở trường</p>
+                        <p>Chúng ta không thể giải quyết những vấn đề của mình bằng lối suy nghĩ giống như khi ta tạo ra chúng</p>
+                        <p>Tôi biết ơn tất cả những ai nói “KHÔNG” với mình. Nhờ họ mà tôi tự làm được mọi việc</p>
+                        <p>Hãy tránh xa những người sống tiêu cực đi, vì họ luôn thấy có vấn đề trong mỗi giải pháp</p>
+                        <p>Những người yếu đuối sẽ trả thù. Người mạnh mẽ thì tha thứ. Còn người thông minh lại bỏ qua tất cả</p>
+                        <p>Điều đúng đắn không phải lúc nào cũng phổ biến, và những điều phổ biến thì không phải lúc nào cũng đúng đắn</p>
+                        <p>Trí tưởng tượng quan trọng hơn kiến thức nhiều</p>
+                        <p>Bản chất của giáo dục không phải là học những sự thật sẵn có, mà đúng hơn là rèn luyện óc suy nghĩ tư duy</p>
+                        <p>Có hai cách sống trong đời. Một là làm như chẳng có phép màu nào cả. Còn cách kia là sống như thể mọi thứ đều là phép màu</p>
+                        <p>Chúng ta nên tìm kiếm sự thật, chứ không phải tìm kiếm những thứ mà ta cho là sự thật</p>
+                        <p> Một con người hạnh phúc sẽ quá hài lòng với hiện tại để suy nghĩ nhiều về tương lai</p>
+                        <p>Mỗi con người đều là một thiên tài. Nhưng nếu bạn đánh giá một con cá bằng khả năng leo cây, nó sẽ sống cả đời và nghĩ là mình thật ngu ngốc.</p>
+                        <p>Cái tôi và sự hiểu biết tỉ lệ nghịch với nhau. Hiểu biết càng nhiều, cái tôi càng bé. Hiểu biết càng ít, cái tôi càng to</p>
+                        <p>Thước đo của trí thông minh là khả năng thay đổi</p>
+                        <p>Khoa học mà thiếu tôn giáo thì khập khiễng. Tôn giáo mà không có khoa học thì mù quáng</p>
+                        <p>Suy luận logic giúp bạn đi từ A tới Z. Còn trí tưởng tượng sẽ đưa bạn đi khắp mọi nơi</p>
+                        <p>Không phải là tôi thông minh, chỉ là tôi tìm hiểu vấn đề lâu hơn mọi người thôi</p>
+
+                    </div>
+                    <div class="input-icon">
+                        <div class="icon">
+                            <div class="title"><h3 style="font-size: 30px">Unordered list style?</h3></div>
+                            <div class="share">
+                                    <div><h3 style="font-size: 30px">Share:</h3></div>
+                                    <div class="icon-share">
+                                        <i class="fab fa-facebook-f" style="padding: 5px 13px;background: blue;"></i>
+                                    </div>
+                                    <div class="icon-share">
+                                        <i class="fab fa-twitter" style="background: #31d2f2"></i>
+                                    </div>
+                                    <div class="icon-share">
+                                        <i class="fab fa-instagram" style="background: #40524b"></i>
+                                    </div>
+                                    <div class="icon-share" >
+                                        <i class="fab fa-youtube" style="background: #fa0606;padding: 5px 7px"></i>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="frame">
+                            <div class="frame-input1">
+                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
+                                <p>Nhận xét về trang của chúng tôi.</p>
+                            </div>
+                            <div class="frame-input2">
+                                <div class="input2">
+                                    <input type="text"placeholder="Enter your name">
+                                    <p>Vui lòng nhập họ tên của bạn.</p>
+                                </div>
+                                <div class="input2" style="margin-left: 10px">
+                                    <input type="text" placeholder="Enter email address">
+                                    <p>Vui lòng nhập email của bạn.</p>
+                                </div>
+                            </div>
+                            <div class="frame-input3">
+                                <div class="input3">
+                                    <input type="text" placeholder="Enter subject" style="border: 1px solid #e5e6e9;
+                                                                                                          border-radius: 0px;
+                                                                                                          height: 48px;
+                                                                                                          width: 770px;
+                                                                                                          padding-left: 18px;
+                                                                                                          font-size: 13px">
+                                    <p>Chủ đề của bạn.</p>
+                                </div>
+                            </div>
+                            <div class="button" style="margin-top: 30px">
+                                <button type="submit" class="button-submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-right" >
+                    <h3 style="font-size: 24px;margin-top: 2px;margin-left: 28px"><b>Follow Team </b></h3>
+                    <div class="frame-icon">
+                        <div class="top">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f" style="padding: 5px 13px;background: blue;"></i>
+                                <div class="text-icon"><p><b>8,045</b> <br> Fans</p></div>
+                            </div>
+                            <div class="icon">
+                                <i class="fab fa-twitter" style="background: #31d2f2"></i>
+                                <div class="text-icon"><p><b>8,045</b> <br> Fans</p></div>
+                            </div>
+                        </div>
+                        <div class="bottom" >
+                            <div class="icon">
+                                <i class="fab fa-instagram" style="background: #40524b"></i>
+                                <div class="text-icon"><p><b>8,045</b> <br> Fans</p></div>
+                            </div>
+                            <div class="icon" >
+                                <i class="fab fa-youtube" style="background: #fa0606;padding: 5px 7px"></i>
+                                <div class="text-icon"><p><b>8,045</b> <br> Fans</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad">
+                        <img src="img/news/news_card.jpg" alt="" style="padding: 0 61px;padding: 0 76px; width: 65%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>
