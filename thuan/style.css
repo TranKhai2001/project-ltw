@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header .container .social-media{
+    background-color: black;
+    color: white;
+}
+header .container .social-media .social-media-container{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .social-media .social-media-container .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .social-media .social-media-container .left .cloud1{
+    margin: 10px 50px 10px 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .social-media .social-media-container .left .cloud1 i{
+    padding: 0 10px 0 0px;
+}
+header .container .social-media .social-media-container .left .cloud2{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .social-media .social-media-container .left .cloud2 i{
+    padding: 0 10px 0 0px;
+}
+header .container .social-media .social-media-container .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container .social-media .social-media-container .right a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+header .container .logo-site{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo-site img{
+}
+/* nav*/
+header .container nav{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container nav .nav-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header .container nav .nav-container ul li a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#284f75;
+}
+header .container nav .nav-container ul li .hover-active, header .container nav .nav-container ul li a:hover{
+    color: #f79983;
+    transition: 0.3s;
+}
+header .container nav .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container nav .search a{
+    color: black;
+}
+header .container nav .search form{
+    margin: 0px 10px;
+}
+
+header .container nav .search form .input_active{
+    padding: 7px 10px;
+    font-size: 15px;
+    width: 100%;
+}
+/* footer */
+footer {
+    background-color: black;
+
+}
+
+footer .container {
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*color: white;*/
+    color:#727272;
+}
+
+footer .container .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+footer .container .right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+footer .container .right ul li{
+    list-style: none;
+    margin: 7px;
+}
+
+footer .container .right ul li a{
+    color: #818384;
+    text-decoration: none;
+}
