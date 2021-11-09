@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main-color.css">
+    <link rel="stylesheet" href="assets/css/checkout-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body class="biolife-body">
 
@@ -783,7 +785,7 @@
 
     <!--Hero Section-->
     <div class="hero-section hero-background">
-        <h1 class="page-title">Organic Fruits</h1>
+        <h1 class="page-title">THANH TOÁN</h1>
     </div>
 
     <!--Navigation section-->
@@ -791,7 +793,7 @@
         <nav class="biolife-nav">
             <ul>
                 <li class="nav-item"><a href="index-2.html" class="permal-link">Home</a></li>
-                <li class="nav-item"><span class="current-page">ShoppingCart</span></li>
+                <li class="nav-item"><span class="current-page">Thanh toán</span></li>
             </ul>
         </nav>
     </div>
@@ -804,41 +806,70 @@
                 <div class="row">
 
                     <!--checkout progress box-->
-                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
-                        <div class="checkout-progress-wrap">
-                            <ul class="steps">
-                                <li class="step 1st">
-                                    <div class="checkout-act active">
-                                        <h3 class="title-box"><span class="number">1</span>Customer</h3>
-                                        <div class="box-content">
-                                            <p class="txt-desc">Checking out as a <a class="pmlink" href="#">Guest?</a> You’ll be able to save your details to create an account with us later.</p>
-                                            <div class="login-on-checkout">
-                                                <form action="#" name="frm-login" method="post">
-                                                    <p class="form-row">
-                                                        <label for="input_email">Email Address</label>
-                                                        <input type="email" name="email" id="input_email" value="" placeholder="Your email">
-                                                        <button type="submit" name="btn-sbmt" class="btn">Continue As Guest</button>
-                                                    </p>
-                                                    <p class="form-row">
-                                                        <input type="checkbox" name="subcribe" id="input_subcribe" >
-                                                        <label for="input_subcribe">Subscribe to our newsletter</label>
-                                                    </p>
-                                                    <p class="msg">Already have an account? <a href="#" class="link-forward">Sign in now</a></p>
-                                                </form>
-                                            </div>
+                    <div class="content-checkout-left col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                        <hr>
+                        <h2 class="title-bill">THANH TOÁN VÀ GIAO HÀNG</h2>
+
+                        <div class="content-checkout">
+                            <form>
+                                <div style="padding: 0 15px" class="row">
+                                    <div class="pdtop name-email">
+                                        <div class="col-6">
+                                            <label class="form-label" for="firstname">Họ tên</label>
+                                            <input type="text" placeholder="Họ tên của bạn" id="firstname" class="form-control">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label class="form-label" for="email">Email
+                                                <span class="text-muted"> (Optional)</span>
+                                            </label>
+                                            <input type="text" id="email" class="form-control">
                                         </div>
                                     </div>
-                                </li>
-                                <li class="step 2nd">
-                                    <div class="checkout-act"><h3 class="title-box"><span class="number">2</span>Shipping</h3></div>
-                                </li>
-                                <li class="step 3rd">
-                                    <div class="checkout-act"><h3 class="title-box"><span class="number">3</span>Billing</h3></div>
-                                </li>
-                                <li class="step 4th">
-                                    <div class="checkout-act"><h3 class="title-box"><span class="number">4</span>Payment</h3></div>
-                                </li>
-                            </ul>
+
+                                    <div class="pdtop col-5">
+                                        <label class="form-label" for="">Tỉnh/Thành phố </label>
+
+                                        <input type="text" list="browsers" placeholder="Vui lòng nhập tỉnh/thành phố" class="form-control">
+                                        <datalist id="browsers">
+                                            <option value="Thành phố Hồ Chí Minh">
+                                            <option value="Đắc Lắc">
+                                            <option value="Đồng Nai">
+                                        </datalist>
+                                    </div>
+                                    <div class="pdtop col-5">
+                                        <label class="form-label" for="">Quận/ Huyện </label>
+
+                                        <input type="text" list="quan-huyen" placeholder="Vui lòng nhập quận/huyện" class="form-control">
+                                        <datalist id="quan-huyen">
+                                            <option value="Thủ Đức">
+                                            <option value="Krong Pac">
+                                            <option value="Đồng Nai">
+                                        </datalist>
+                                    </div>
+                                    <div class="pdtop col-5">
+                                        <label class="form-label" for="">Phường/ Xã </label>
+
+                                        <input type="text" list="phuong-xa" placeholder="Vui lòng nhập phường/xã" class="form-control">
+                                        <datalist id="phuong-xa">
+                                            <option value="Thành phố Hồ Chí Minh">
+                                            <option value="Đắc Lắc">
+                                            <option value="Đồng Nai">
+                                        </datalist>
+                                    </div>
+                                    <div class="pdtop col-12">
+                                        <label class="form-label" for="address">Địa chỉ nhận hàng </label>
+                                        <input type="text" id="address" placeholder="Vui lòng nhập địa chỉ nhận hàng" class="form-control">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="plus-information">
+                                    <h2 class="title-bill">THÔNG TIN BỔ SUNG</h2>
+                                    <lable>Ghi chú đơn hàng (tuỳ chọn)</lable>
+                                    <textarea name="order-comment" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn." id="input-text" cols="2" rows="5"></textarea>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
 
@@ -846,11 +877,11 @@
                     <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 sm-padding-top-48px sm-margin-bottom-0 xs-margin-bottom-15px">
                         <div class="order-summary sm-margin-bottom-80px">
                             <div class="title-block">
-                                <h3 class="title">Order Summary</h3>
-                                <a href="#" class="link-forward">Edit cart</a>
+                                <h3 class="title">ĐƠN HÀNG CỦA BẠN</h3>
+                                <a href="#" class="link-forward">Chỉnh sửa</a>
                             </div>
                             <div class="cart-list-box short-type">
-                                <span class="number">2 items</span>
+                                <span class="number">2 sản phẩm</span>
                                 <ul class="cart-list">
                                     <li class="cart-elem">
                                         <div class="cart-item">
@@ -890,32 +921,35 @@
                                 <ul class="subtotal">
                                     <li>
                                         <div class="subtotal-line">
-                                            <b class="stt-name">Subtotal</b>
+                                            <b class="stt-name">Tạm tính</b>
                                             <span class="stt-price">£170.00</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="subtotal-line">
-                                            <b class="stt-name">Shipping</b>
+                                            <b class="stt-name">Phí ship</b>
                                             <span class="stt-price">£20.00</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="subtotal-line">
-                                            <b class="stt-name">Tax</b>
+                                            <b class="stt-name">Thuế</b>
                                             <span class="stt-price">£0.00</span>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="subtotal-line">
-                                            <a href="#" class="link-forward">Promo/Gift Certificate</a>
+                                            <a href="#" class="link-forward">Phiếu giảm giá</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="subtotal-line">
-                                            <b class="stt-name">total:</b>
+                                            <b class="stt-name">Tổng:</b>
                                             <span class="stt-price">£190.00</span>
                                         </div>
+                                    </li>
+                                    <li>
+                                        <button class="accept-payment">ĐẶT HÀNG</button>
                                     </li>
                                 </ul>
                             </div>
