@@ -5764,7 +5764,40 @@ body.open-overlay #overlay{
     padding: 10px 10px 9px;
     color: #444444;
     width: 100%;
+    border-radius: 33px;
 }
+
+.social-text {
+    padding: 0.7rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+}
+
 .signin-container .form-row .btn-submit{
     min-width: 132px;
     margin-top: 7px;
@@ -5812,6 +5845,7 @@ body.open-overlay #overlay{
 .register-in-container .intro{
     border: 2px solid #e6e6e6;
     padding: 20px;
+    border-radius: 25px;
 }
 .register-in-container .box-title{
     font-size: 30px;
